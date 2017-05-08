@@ -3,4 +3,6 @@
 
 
 
+void colad_tests();
+
 #endif // COLADINAMICA_H_INCLUDED

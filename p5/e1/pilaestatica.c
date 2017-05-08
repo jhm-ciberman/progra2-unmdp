@@ -18,7 +18,7 @@ void pilae_pone(Pilae* pila, PilaeDato dato){
 
 void pilae_saca(Pilae* pila, PilaeDato* dato) {
     if (pila->elementos != 0)
-        *dato = pila->datos[pila->elementos--];
+        *dato = pila->datos[--pila->elementos];
 
 }
 

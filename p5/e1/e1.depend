@@ -1,15 +1,15 @@
 # depslib dependency file v1.0
-1494215727 source:c:\users\xxxxxxxxxxx\repos\progra-2\p5\e1\coladinamica.c
+1494221153 source:c:\users\xxxxxxxxxxx\repos\progra-2\p5\e1\coladinamica.c
 	"coladinamica.h"
 
-1494215637 c:\users\xxxxxxxxxxx\repos\progra-2\p5\e1\coladinamica.h
+1494221165 c:\users\xxxxxxxxxxx\repos\progra-2\p5\e1\coladinamica.h
 
-1494215741 source:c:\users\xxxxxxxxxxx\repos\progra-2\p5\e1\colaestatica.c
+1494221144 source:c:\users\xxxxxxxxxxx\repos\progra-2\p5\e1\colaestatica.c
 	"colaestatica.h"
 
-1494215592 c:\users\xxxxxxxxxxx\repos\progra-2\p5\e1\colaestatica.h
+1494221173 c:\users\xxxxxxxxxxx\repos\progra-2\p5\e1\colaestatica.h
 
-1494217463 source:c:\users\xxxxxxxxxxx\repos\progra-2\p5\e1\main.c
+1494221241 source:c:\users\xxxxxxxxxxx\repos\progra-2\p5\e1\main.c
 	<stdio.h>
 	<stdlib.h>
 	"piladinamica.h"
@@ -17,15 +17,16 @@
 	"colaestatica.h"
 	"coladinamica.h"
 
-1494219673 source:c:\users\xxxxxxxxxxx\repos\progra-2\p5\e1\piladinamica.c
+1494220801 source:c:\users\xxxxxxxxxxx\repos\progra-2\p5\e1\piladinamica.c
 	"piladinamica.h"
 	<stdlib.h>
 	<assert.h>
 
 1494216823 c:\users\xxxxxxxxxxx\repos\progra-2\p5\e1\piladinamica.h
 
-1494215685 source:c:\users\xxxxxxxxxxx\repos\progra-2\p5\e1\pilaestatica.c
+1494221467 source:c:\users\xxxxxxxxxxx\repos\progra-2\p5\e1\pilaestatica.c
 	"pilaestatica.h"
+	<assert.h>
 
 1494220494 c:\users\xxxxxxxxxxx\repos\progra-2\p5\e1\pilaestatica.h
 

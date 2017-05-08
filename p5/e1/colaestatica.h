@@ -2,5 +2,6 @@
 #define COLAESTATICA_H_INCLUDED
 
 
+void colae_tests();
 
 #endif // COLAESTATICA_H_INCLUDED

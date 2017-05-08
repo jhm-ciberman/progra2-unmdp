@@ -7,7 +7,11 @@
 
 int main()
 {
-    printf("Hello world!\n");
+    printf("Starting tests\n");
     pilad_tests();
+    pilae_tests();
+    colad_tests();
+    colae_tests();
+    printf("All tests passed\n");
     return 0;
 }
