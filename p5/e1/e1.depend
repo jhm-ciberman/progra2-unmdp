@@ -1,15 +1,18 @@
 # depslib dependency file v1.0
-1494221153 source:c:\users\xxxxxxxxxxx\repos\progra-2\p5\e1\coladinamica.c
+1494225445 source:c:\users\xxxxxxxxxxx\repos\progra-2\p5\e1\coladinamica.c
 	"coladinamica.h"
+	<stdlib.h>
+	<assert.h>
 
-1494221165 c:\users\xxxxxxxxxxx\repos\progra-2\p5\e1\coladinamica.h
+1494223354 c:\users\xxxxxxxxxxx\repos\progra-2\p5\e1\coladinamica.h
 
-1494221144 source:c:\users\xxxxxxxxxxx\repos\progra-2\p5\e1\colaestatica.c
+1494227361 source:c:\users\xxxxxxxxxxx\repos\progra-2\p5\e1\colaestatica.c
 	"colaestatica.h"
+	<assert.h>
 
-1494221173 c:\users\xxxxxxxxxxx\repos\progra-2\p5\e1\colaestatica.h
+1494225993 c:\users\xxxxxxxxxxx\repos\progra-2\p5\e1\colaestatica.h
 
-1494221241 source:c:\users\xxxxxxxxxxx\repos\progra-2\p5\e1\main.c
+1494227015 source:c:\users\xxxxxxxxxxx\repos\progra-2\p5\e1\main.c
 	<stdio.h>
 	<stdlib.h>
 	"piladinamica.h"
