@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1494220801 source:c:\users\xxxxxxxxxxx\repos\progra-2\p5\e2\piladinamica.c
+	"piladinamica.h"
+	<stdlib.h>
+	<assert.h>
+
+1494228820 c:\users\xxxxxxxxxxx\repos\progra-2\p5\e2\piladinamica.h
+
+1494221467 source:c:\users\xxxxxxxxxxx\repos\progra-2\p5\e2\pilaestatica.c
+	"pilaestatica.h"
+	<assert.h>
+
+1494228819 c:\users\xxxxxxxxxxx\repos\progra-2\p5\e2\pilaestatica.h
+
+1494229831 source:c:\users\xxxxxxxxxxx\repos\progra-2\p5\e2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"pilaestatica.h"
+	"piladinamica.h"
+
