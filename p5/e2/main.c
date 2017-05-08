@@ -40,12 +40,12 @@ void archivo_lee_pila_mantiene(FILE *f) {
     }
     while (!pilad_vacia(pila1)) {
         pilad_saca(&pila1, &c);
-        pilad_pone(&pila2, &c);
+        pilad_pone(&pila2, c);
         putc(c, stdout);
     }
     while (!pilad_vacia(pila2)) {
         pilad_saca(&pila2, &c);
-        pilad_pone(&pila1, &c);
+        pilad_pone(&pila1, c);
     }
 }
 
