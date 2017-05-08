@@ -34,6 +34,17 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="piladinamica.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="piladinamica.h" />
+		<Unit filename="pilaestatica.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="pilaestatica.h" />
+		<Unit filename="texto.txt">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Extensions>
 			<code_completion />
 			<envvars />

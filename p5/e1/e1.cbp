@@ -31,9 +31,25 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="coladinamica.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="coladinamica.h" />
+		<Unit filename="colaestatica.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="colaestatica.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="piladinamica.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="piladinamica.h" />
+		<Unit filename="pilaestatica.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="pilaestatica.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
