@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1494392204 source:c:\users\xxxxxxxxxxx\repos\progra-2\p6\e1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Lista.h"
+
+1494391904 source:c:\users\xxxxxxxxxxx\repos\progra-2\p6\e1\lista.c
+	"Lista.h"
+	<stdlib.h>
+	<stdio.h>
+	<assert.h>
+
+1494390299 c:\users\xxxxxxxxxxx\repos\progra-2\p6\e1\lista.h
+
