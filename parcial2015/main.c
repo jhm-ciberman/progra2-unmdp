@@ -60,7 +60,6 @@ void puntoA_test_debe_eliminar_todos_los_elementos_de_x() {
 
 }
 void puntoA_test_debe_devolver_cero_si_la_pila_esta_vacia() {
-    int eliminados;
     Pila p;
     iniciaP(&p);
     assert(eliminaTodosP(&p, -1) == 0);
