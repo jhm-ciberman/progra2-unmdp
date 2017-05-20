@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1495253206 source:c:\users\xxxxxxxxxxx\repos\progra-2\p7\e6\main.c
+	<stdio.h>
+	<stdlib.h>
+	<assert.h>
+	<string.h>
+
