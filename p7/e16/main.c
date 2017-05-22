@@ -4,8 +4,7 @@
 #include <string.h>
 
 /**
-15. Desarrollar una función que compruebe que si un árbol binario es un ABB.
-
+16. Implementar una función iterativa que inserte un elemento en un ABB.
 */
 
 typedef char ArbolDato;
@@ -17,19 +16,6 @@ typedef struct ArbolNodo {
 } ArbolNodo;
 
 typedef ArbolNodo* Arbol;
-
-void arbol_inserta(Arbol *arbol, ArbolDato x) {
-    if (*arbol == NULL) {
-        *arbol = (Arbol) malloc (sizeof (struct ArbolNodo));
-        (*arbol)->dato = x;
-        (*arbol)->der = NULL;
-        (*arbol)->izq = NULL;
-    } else if (x > (*arbol)->dato) {
-        arbol_inserta(&((*arbol)->der), x);
-    } else {
-        arbol_inserta(&((*arbol)->izq), x);
-    }
-}
 
 int arbol_es_abb(Arbol arbol) {
     if (arbol) {
@@ -45,10 +31,22 @@ int arbol_es_abb(Arbol arbol) {
     return 1;
 }
 
+void arbol_inserta(Arbol *arbol, ArbolDato dato) {
+    if (!*arbol) {
+        *arbol = (Arbol) malloc(sizeof(ArbolNodo));
+        (*arbol)->dato = dato;
+        (*arbol)->izq = NULL;
+        (*arbol)->der = NULL;
+    } else if (dato < (*arbol)->dato) {
+        arbol_inserta(&((*arbol)->izq), dato);
+    } else if (dato > (*arbol)->dato) {
+        arbol_inserta(&((*arbol)->der), dato);
+    }
+}
+
 int main()
 {
     Arbol a = NULL;
-    Arbol b = NULL; //Arbol vacio
 
     // REFERENCIA: https://www.programacion.com.py/wp-content/uploads/2013/04/a71.jpg
     arbol_inserta(&a, 'P');
@@ -64,12 +62,7 @@ int main()
     arbol_inserta(&a, 'W');
 
 
-    assert(arbol_es_abb(b) == 1); //Arbol vacio ES un ABB
     assert(arbol_es_abb(a) == 1);
-
-    a->der->dato = 'Z'; // Volver el arbol en un arbol que no es ABB
-    assert(arbol_es_abb(a) == 0);
-
 
     printf("Todos los tests pasaron");
 
