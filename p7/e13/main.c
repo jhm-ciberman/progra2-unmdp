@@ -4,7 +4,9 @@
 
 
 /**
-12. Retornar el valor mínimo de un ABB.
+13. Determinar cuántos elementos de un ABB son mayores que A y menores que B. A y B son
+parámetros de entrada.
+
 */
 
 typedef int ArbolDato;
