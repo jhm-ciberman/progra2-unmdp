@@ -69,10 +69,10 @@ int main()
     arbol_inserta(&a, 'Z');
     arbol_inserta(&a, 'W');
 
-    //assert(bosque_altura_mayor(a, 3) == 0);
-    //assert(bosque_altura_mayor(a, 2) == 1);
+    assert(bosque_altura_mayor(a, 3) == 0);
+    assert(bosque_altura_mayor(a, 2) == 1);
     assert(bosque_altura_mayor(a, 1) == 3);
-    //assert(bosque_altura_mayor(a, 0) == 4);
+    assert(bosque_altura_mayor(a, 0) == 4);
 
     printf("Todos los tests pasaron");
 
