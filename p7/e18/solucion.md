@@ -1,5 +1,6 @@
 18. Transformar gráficamente el siguiente bosque en un árbol binario:
 
+```
       A            B                  L
                   / \                / \
                  C   D              M   N
@@ -9,9 +10,10 @@
                   E F G H
                    /|\
                   I J K
-                  
+```                  
                   
 UNO HERMANOS y raices
+```
                   
       A============B==================L
                   / \                / \
@@ -22,9 +24,13 @@ UNO HERMANOS y raices
                   E=F=G=H
                    /|\
                   I=J=K
+				  
+```
                   
 ELIMINO PUNTEROS DE TODOS LOS HIJOS EXCEPTO AL PRIMER HIJO                  
-                  
+
+```
+
       A============B==================L
                   /                  /
                  C===D              M===N
@@ -34,10 +40,10 @@ ELIMINO PUNTEROS DE TODOS LOS HIJOS EXCEPTO AL PRIMER HIJO
                   E=F=G=H
                    /
                   I=J=K
-                  
+```                  
 ACOMODO (graficamente) EL ARBOL 
 
-                  
+```               
                    A
                   /
                  B
@@ -59,4 +65,5 @@ ACOMODO (graficamente) EL ARBOL
                  K
                  
                  
-                 
+```
+

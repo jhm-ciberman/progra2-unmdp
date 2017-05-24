@@ -1,5 +1,6 @@
 23. Dado el siguiente árbol N-ario:
 
+```
                       B
                      / \
                     C   D
@@ -8,6 +9,7 @@
                     E F G H L
                      /|\   /
                     I J K M
+```
 
 a) Mostrar (sin desarrollar un programa) el contenido de sus nodos según cada recorrido:
 preorden, inorden, postorden.
