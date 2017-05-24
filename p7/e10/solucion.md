@@ -193,10 +193,12 @@ Eliminar 24:
 ___________________________________
 
 Eliminar 8:
+
 (Se busca por la rama de la derecha (5) del hijo de la izquierda (1) 
 del nodo a remover (8) un nodo que no tenga hijos a la derecha (5) y se copia 
 su valor al valor del nodo a remover (valor de nodo 8 <- 5), y todo todo el 
 subarbol izquierdo (3) del nodo encontrado (5) se promueve al lugar del nodo encontrado)
+
 ```
              10
             /  \
@@ -212,10 +214,12 @@ subarbol izquierdo (3) del nodo encontrado (5) se promueve al lugar del nodo enc
 ___________________________________
 
 Eliminar 10:
+
 (Se busca por la rama de la derecha (9) del hijo de la izquierda (5) 
 del nodo a remover (10) un nodo que no tenga hijos a la derecha (9) y se copia 
 su valor al valor del nodo a remover (valor de nodo 10 <- 9), y todo todo el 
 subarbol izquierdo (NULO) del nodo encontrado (9) se promueve al lugar del nodo encontrado)
+
 ```
               9
             /  \

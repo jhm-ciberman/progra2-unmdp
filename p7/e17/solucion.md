@@ -84,9 +84,11 @@ NO AVL
 ``` 
 
 ROTACION DD:
-DERECHA(Nodo) <- IZQUIERDA(Nodo1)
-IZQUIERDA(Nodo1) <- Nodo
-Nodo <- Nodo1 
+
+- DERECHA(Nodo) <- IZQUIERDA(Nodo1)
+- IZQUIERDA(Nodo1) <- Nodo
+- Nodo <- Nodo1 
+
 ```                        
             10                          
            /  \                      
@@ -122,11 +124,13 @@ NO AVL
           5    24    40
 ```          
 ROTACION ID:
-DERECHA(Nodo1) <- IZQUIERDA(Nodo2)
-IZQUIERDA(Nodo2) <- Nodo1
-IZQUIERDA(Nodo) <- DERECHA(Nodo2)
-DERECHA(Nodo2) <- Nodo
-Nodo <- Nodo2
+
+- DERECHA(Nodo1) <- IZQUIERDA(Nodo2)
+- IZQUIERDA(Nodo2) <- Nodo1
+- IZQUIERDA(Nodo) <- DERECHA(Nodo2)
+- DERECHA(Nodo2) <- Nodo
+- Nodo <- Nodo2
+
 ```
             10
            /  \
@@ -167,11 +171,13 @@ NO AVL:
                      32
 ```                     
 Rotación DI
-IZQUIERDA(Nodo1) <- DERECHA(Nodo2)
-DERECHA(Nodo2) <- Nodo1
-DERECHA(Nodo) <- IZQUIERDA(Nodo2)
-IZQUIERDA(Nodo2) <- Nodo
-Nodo <- Nodo2
+
+- IZQUIERDA(Nodo1) <- DERECHA(Nodo2)
+- DERECHA(Nodo2) <- Nodo1
+- DERECHA(Nodo) <- IZQUIERDA(Nodo2)
+- IZQUIERDA(Nodo2) <- Nodo
+- Nodo <- Nodo2
+
 ```
             10
            /  \
@@ -253,7 +259,7 @@ Inserta 25:
                      25
 ```
                   
-#Remover
+## Remover
 
 Eliminar 7, 24, 8, 10. 
 ___________________________________
