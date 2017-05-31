@@ -22,21 +22,36 @@ a) retornar la cantidad de nodos que posee.
 
 ```C
 int nodos(Arbol a, Posicion p) {
-	if (!Nulo(p)) {
-		return nodos(a, HijoMasIzq(a, p)) + nodos(a, HermanoDer(a, p));
-	}
-	return 0;
+	return Nulo(p) ? 0 : nodos(a, HijoMasIzq(a, p)) + nodos(a, HermanoDer(a, p)) + 1;
+}
+int main() {
+	printf("Numero de nodos: %d", nodos(a, Raiz(a)));
+	return 0; 
 }
 ```
 
 b) hallar el porcentaje de claves pares
 
 ```C
-int pares(Arbol a, Posicion p) {
+int pares(Arbol a, Posicion p, int *total, int *pares) {
 	if (!Nulo(p)) {
-		return pares(a, HijoMasIzq(a, p)) + pares(a, HermanoDer(a, p)) + (Info(p, a) % 2 == 0);
+		*total++;
+		if (Info(p, a) % 2 == 0)
+			*pares++;
+			
+		pares(a, HijoMasIzq(a, p), total, pares);
+		pares(a, HermanoDer(a, p), total, pares);
 	}
 	return 0;
+}
+
+int main() {
+	int cont, suma; 
+	float prom;
+	pares(a, Raiz(a), &cont, &suma);
+	prom = suma / cont;
+	printf("Pares: %.2f%%", prom);
+	return 0; 
 }
 ```
 
@@ -56,6 +71,10 @@ int grado(Arbol a, Posicion p) {
 		}
 	}
 	return cont > gradoMax ? cont : gradoMax;
+}
+int main() {
+	printf("Grado: %d", grado(a, Raiz(a)));
+	return 0; 
 }
 ```
 
@@ -80,6 +99,10 @@ int nodos_grado_impar_en_niveles_pares(Arbol a, Posicion p) {
 	}
 	return 0;
 }
+int main() {
+	printf("%d", nodos_grado_impar_en_niveles_pares(a, Raiz(a)));
+	return 0; 
+}
 ```
 
 e) verificar si cumple que para todas las claves salvo las de las hojas, su valor numérico es igual
@@ -100,6 +123,10 @@ int nodo_dato_igual_nro_hijos(Arbol a, Posicion p) {
 	}
 	return 1;
 }
+int main() {
+	printf("%d", nodo_dato_igual_nro_hijos(a, Raiz(a)));
+	return 0; 
+}
 ```
 
 ```C
@@ -115,6 +142,12 @@ void nodo_dato_igual_nro_hijos(Arbol a, Posicion p, int *cumple) {
 		}
 		*cumple = *cumple && (hijosNum == Info(p, a));
 	}
+}
+int main() {
+	int cumple = 1;
+	nodo_dato_igual_nro_hijos(a, Raiz(a), &cumple)
+	printf("%d", 1);
+	return 0; 
 }
 ```
 
