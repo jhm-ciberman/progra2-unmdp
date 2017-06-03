@@ -30,7 +30,7 @@ int arbol_es_abb(Arbol arbol) {
     }
     return 1;
 }
-
+/*
 void arbol_inserta(Arbol *arbol, ArbolDato dato) {
     if (!*arbol) {
         *arbol = (Arbol) malloc(sizeof(ArbolNodo));
@@ -42,8 +42,21 @@ void arbol_inserta(Arbol *arbol, ArbolDato dato) {
     } else if (dato > (*arbol)->dato) {
         arbol_inserta(&((*arbol)->der), dato);
     }
+}*/
+void arbol_inserta(Arbol *arbol, ArbolDato dato) {
+    Arbol pNodo = *arbol;
+    while (pNodo) {
+        if (dato < pNodo->dato) {
+            *pNodo = pNodo->izq;
+        } else if (dato > pNodo->dato) {
+            *pNodo = pNodo->der;
+        }
+    }
+    *arbol = (Arbol) malloc(sizeof(ArbolNodo));
+    (*arbol)->dato = dato;
+    (*arbol)->izq = NULL;
+    (*arbol)->der = NULL;
 }
-
 int main()
 {
     Arbol a = NULL;
@@ -63,6 +76,7 @@ int main()
 
 
     assert(arbol_es_abb(a) == 1);
+    assert(a->dato == 'P');
 
     printf("Todos los tests pasaron");
 

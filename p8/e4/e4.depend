@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1496243339 source:d:\mora\e4\main.c
+	<stdio.h>
+	<stdlib.h>
+	<assert.h>
+
