@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1496848719 source:d:\mora\e10\cola.c
+	"cola.h"
+	<stdlib.h>
+	<assert.h>
+
+1496848706 d:\mora\e10\cola.h
+
+1496848728 source:d:\mora\e10\pila.c
+	"pila.h"
+	<stdlib.h>
+	<assert.h>
+
+1496848604 d:\mora\e10\pila.h
+
+1496848719 source:c:\users\xxxxxxxxxxx\repos\progra-2\p8\e10\cola.c
+	"cola.h"
+	<stdlib.h>
+	<assert.h>
+
+1496848706 c:\users\xxxxxxxxxxx\repos\progra-2\p8\e10\cola.h
+
+1496893998 source:c:\users\xxxxxxxxxxx\repos\progra-2\p8\e10\main.c
+	<stdio.h>
+	<stdlib.h>
+	<assert.h>
+	"pila.h"
+	"cola.h"
+
+1496848604 c:\users\xxxxxxxxxxx\repos\progra-2\p8\e10\pila.h
+
+1496848728 source:c:\users\xxxxxxxxxxx\repos\progra-2\p8\e10\pila.c
+	"pila.h"
+	<stdlib.h>
+	<assert.h>
+
