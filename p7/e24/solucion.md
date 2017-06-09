@@ -70,7 +70,7 @@ int grado(Arbol a, Posicion p) {
 			c = HermanoDer(a, c);
 		}
 	}
-	return cont > gradoMax ? cont : gradoMax;
+	return hijosNum > gradoMax ? hijosNum : gradoMax;
 }
 int main() {
 	printf("Grado: %d", grado(a, Raiz(a)));
