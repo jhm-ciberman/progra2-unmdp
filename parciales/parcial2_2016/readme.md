@@ -17,7 +17,7 @@ int abs(int a) {
 }
 
 int arbol_verifica(Arbol a) {
-	int encontrado;
+	int encontrado = 0;
 	if (a && a->der && !a->der->der && (abs(a->dato) == abs(a->der->dato))) { 
 		//es grado 2 y las claves son opuestas o iguales
 		return 1;
@@ -27,7 +27,8 @@ int arbol_verifica(Arbol a) {
 			/* Normalmente metería un return acá mismo, pero como soy un buen samaritano que sigue los 
 			principios y doctrinas de la programación estructurada, entonces uso una banderita (encontrado)
 			para decidir cuándo salir del while */
-			encontrado = arbol_verifica(a);
+			if (a->izq)
+				encontrado = arbol_verifica(a->izq);
 			
 			a = a->der;
 		}
@@ -138,7 +139,23 @@ void main() {
 Encontrar el costo minimo de una fuente a todos los nodos del grafo. Indicar el algoritmo utilizado y 
 mostrar su ejecución paso a paso. 
 
-```c
+![Grafo](grafo.png)
+
+Algoritmo: Dijkstra
+
+(En lugar de 1, 2, 3, 4 se nombran a los vertices como A, B, C, D para evitar confusiones)
+
+|Vert actual  |S   |A     |B     |C     |D     |Visitados   |VRecorrido     |
+|------------:|----|------|------|------|------|------------|---------------|
+|S            |-   |10(S) |5(S)  |INF   |INF   |{S}         |{S,S,S,0,0}    |
+|B            |-   |8(B)  |-     |14(B) |7(B)  |{S,B}       |{S,B,S,B,B}    |
+|D            |-   |8(B)  |-     |13(D) |-     |{S,B,D}     |{S,B,S,D,B}    |
+|A            |-   |-     |-     |10(A) |-     |{S,B,D,A}   |{S,B,S,A,B}    |
+|C            |-   |-     |-     |-     |-     |{S,B,D,A,C} |{S,B,S,A,B}    |
+|COSTO:       |0   |8     |5     |10    |7     |            |               |
 
 
-```
+
+
+
+
