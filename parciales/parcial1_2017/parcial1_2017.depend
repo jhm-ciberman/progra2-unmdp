@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1497787480 source:d:\mora\parcial1_2017\colas.c
+	"colas.h"
+
+1497784576 d:\mora\parcial1_2017\colas.h
+
+1497788141 source:d:\mora\parcial1_2017\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"colas.h"
+
+1497508549 source:c:\users\xxxxxxxxxxx\repos\public\progra-2\parciales\parcial1_2017\colas.c
+	"colas.h"
+
+1497508808 c:\users\xxxxxxxxxxx\repos\public\progra-2\parciales\parcial1_2017\colas.h
+
+1497522624 source:c:\users\xxxxxxxxxxx\repos\public\progra-2\parciales\parcial1_2017\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<errno.h>
+	"colas.h"
+
