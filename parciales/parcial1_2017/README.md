@@ -57,4 +57,9 @@ Para aprobar es necesario obtener al menos 5 puntos entre los incisos 1, 2, 3 y 
 - Inciso 3: 2,5 puntos
 - Inciso 4: 2 puntos
 - TDA Cola y General: 1 pnto
+
+
+___________________________
+
+*NOTA:* EN la carpeta *archivos_originales* estan los archivos que se entregaron en el parcial
  
