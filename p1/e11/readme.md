@@ -1,8 +1,8 @@
 11. Desarrollar una macro que devuelva cada uno de los siguientes resultados:
 
-a) Máximo de 2 números 
-b) Caracter es alfabético
-Implementar un programa que utilice las macros desarrolladas. 
+a) MÃ¡ximo de 2 nÃºmeros
+b) Caracter es alfabÃ©tico
+Implementar un programa que utilice las macros desarrolladas.
 
 
 ```c
