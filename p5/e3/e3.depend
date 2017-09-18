@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1505762325 source:f:\repos\public\progra-2\p5\e3\cola.c
+	"cola.h"
+	<stdlib.h>
+	<assert.h>
+
+1505762328 f:\repos\public\progra-2\p5\e3\cola.h
+
+1505762327 source:f:\repos\public\progra-2\p5\e3\pila.c
+	"pila.h"
+	<stdlib.h>
+	<assert.h>
+
+1505764657 f:\repos\public\progra-2\p5\e3\pila.h
+
+1505765132 source:f:\repos\public\progra-2\p5\e3\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"pila.h"
+	"cola.h"
+
