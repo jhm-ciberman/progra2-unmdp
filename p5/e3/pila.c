@@ -2,18 +2,18 @@
 #include <stdlib.h>
 #include <assert.h>
 
-void IniciaP(TPila* pila) {
+void iniciaP(TPila* pila) {
     *pila = NULL;
 }
 
-void PoneP(TPila* pila, PilaDato dato){
+void poneP(TPila* pila, PilaDato dato){
     PilaNodo* pNodo = (PilaNodo*) malloc(sizeof(PilaNodo));
     pNodo->dato = dato;
     pNodo->siguiente = *pila;
     *pila = pNodo;
 }
 
-void SacaP(TPila* pila, PilaDato* dato) {
+void sacaP(TPila* pila, PilaDato* dato) {
     if (pila != NULL) {
         PilaNodo* pSig = (*pila)->siguiente;
         *dato = (*pila)->dato;
@@ -24,11 +24,11 @@ void SacaP(TPila* pila, PilaDato* dato) {
 
 }
 
-PilaDato ConsultaP(TPila pila) {
+PilaDato consultaP(TPila pila) {
     return pila->dato;
 }
 
-int VaciaP(TPila pila) {
+int vaciaP(TPila pila) {
     return (pila == NULL);
 }
 

@@ -14,20 +14,20 @@ typedef PilaDato TString;
 
 void muestraOrdenInverso(TPila * pila, int n) {
     TString nombre;
-    if (!VaciaP(*pila) && n > 0) {
-        SacaP(pila, &nombre);
+    if (!vaciaP(*pila) && n > 0) {
+        sacaP(pila, &nombre);
         printf("%s\n", nombre.str);
         muestraOrdenInverso(pila, n-1);
-        PoneP(pila, nombre);
+        poneP(pila, nombre);
     }
 }
 void muestraOrden(TPila * pila, int n) {
     TString nombre;
-    if (!VaciaP(*pila) && n > 0) {
-        SacaP(pila, &nombre);
+    if (!vaciaP(*pila) && n > 0) {
+        sacaP(pila, &nombre);
 
         muestraOrden(pila, n-1);
-        PoneP(pila, nombre);
+        poneP(pila, nombre);
         printf("%s\n", nombre.str);
     }
 }
@@ -37,7 +37,7 @@ int main()
     TString nombre;
     int n;
     TPila pila;
-    IniciaP(&pila);
+    iniciaP(&pila);
     printf("Ingrese el nombre de los votantes en el orden que van votando. \n");
     printf("Ingrese \"salir\" cuando quiera salir del proceso de ingreso de datos.\n");
     printf("Nombre del votante: ");
@@ -45,7 +45,7 @@ int main()
     scanf("%s", nombre.str);
     while (strcmp(strlwr(nombre.str), "salir") != 0) {
 
-        PoneP(&pila, nombre);
+        poneP(&pila, nombre);
 
         printf("Nombre del votante: ");
         scanf("%s", nombre.str);

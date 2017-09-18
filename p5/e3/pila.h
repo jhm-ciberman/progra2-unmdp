@@ -10,10 +10,10 @@ typedef struct PilaNodo{
 
 typedef PilaNodo* TPila;
 
-void IniciaP(TPila* pila);
-void PoneP(TPila* pila, PilaDato dato);
-void SacaP(TPila* pila, PilaDato* dato);
-PilaDato ConsultaP(TPila pila);
-int VaciaP(TPila pila);
+void iniciaP(TPila* pila);
+void poneP(TPila* pila, PilaDato dato);
+void sacaP(TPila* pila, PilaDato* dato);
+PilaDato consultaP(TPila pila);
+int vaciaP(TPila pila);
 
 #endif // PILADINAMICA_H_INCLUDED

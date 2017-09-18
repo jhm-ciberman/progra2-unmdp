@@ -13,10 +13,10 @@ typedef struct {
     ColaNodo* ultimo;
 } TCola;
 
-void IniciaC(TCola* cola);
-void PoneC(TCola* cola, ColaDato dato);
-void SacaC(TCola* cola, ColaDato* dato);
-ColaDato ConsultaC(TCola cola);
-int VaciaC(TCola cola);
+void iniciaC(TCola* cola);
+void poneC(TCola* cola, ColaDato dato);
+void sacaC(TCola* cola, ColaDato* dato);
+ColaDato consultaC(TCola cola);
+int vaciaC(TCola cola);
 
 #endif // ColaINAMICA_H_INCLUDED

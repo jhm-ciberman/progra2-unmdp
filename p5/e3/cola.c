@@ -8,12 +8,12 @@
 |------------------------------------------------------
 */
 
-void colad_inicia(TCola* cola) {
+void iniciaC(TCola* cola) {
     cola->primero = NULL;
     cola->ultimo = NULL;
 }
 
-void colad_pone(TCola* cola, ColaDato dato){
+void poneC(TCola* cola, ColaDato dato){
     ColaNodo* pNodo = (ColaNodo*) malloc(sizeof(ColaNodo));
     pNodo->dato = dato;
     pNodo->siguiente = NULL;
@@ -27,7 +27,7 @@ void colad_pone(TCola* cola, ColaDato dato){
 
 }
 
-void colad_saca(TCola* cola, ColaDato* dato) {
+void sacaC(TCola* cola, ColaDato* dato) {
     ColaNodo* pNodo = cola->primero;
     if (pNodo != NULL) {
         *dato = pNodo->dato;
@@ -37,10 +37,10 @@ void colad_saca(TCola* cola, ColaDato* dato) {
 
 }
 
-ColaDato colad_consulta(TCola cola) {
+ColaDato consultaC(TCola cola) {
     return cola.primero->dato;
 }
 
-int colad_vacia(TCola cola) {
+int vaciaC(TCola cola) {
     return (cola.primero == NULL);
 }
