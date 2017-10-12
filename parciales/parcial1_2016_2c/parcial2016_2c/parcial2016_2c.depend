@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1507774360 source:f:\repos\public\progra-2\parciales\parcial1_2016_2c\parcial2016_2c\main.c
+	<stdio.h>
+	<stdlib.h>
+	"pila.h"
+	<string.h>
+
+1507770575 f:\repos\public\progra-2\parciales\parcial1_2016_2c\parcial2016_2c\pila.h
+
+1507770601 source:f:\repos\public\progra-2\parciales\parcial1_2016_2c\parcial2016_2c\pila.c
+	"pila.h"
+
